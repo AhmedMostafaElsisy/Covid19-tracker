@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/action_sort_alpha"
+        android:icon="@drawable/ic_sort_by_alpha"
+        android:title="Sort Alphabetically"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="Sort by Cases"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/sort_by_Cases"
+                android:icon="@drawable/ic_sort_black"
+                android:title="Cases" />
+            <item
+                android:id="@+id/sort_by_deaths"
+                android:icon="@drawable/ic_sort_black"
+                android:title="Deaths" />
+            <item
+                android:id="@+id/sort_by_recovered"
+                android:icon="@drawable/ic_sort_black"
+                android:title="Recovered" />
+        </menu>
+    </item>
+
+
+</menu>
